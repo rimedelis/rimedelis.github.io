@@ -1,3 +1,3 @@
 # <3 MoRi <3
     
-<center><img src="MoRi.jpg" alt="MoRi" width="400"/></center>
+<p style="text-align:center;"><img src="MoRi.jpg" alt="MoRi" width="400"/></p>
