@@ -1,3 +1,3 @@
 This is a personal website.
 
-Available [here](https://rimedelis16.github.io)
+Available [here](https://rimedelis.github.io)
