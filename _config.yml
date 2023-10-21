@@ -2,7 +2,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 
 title: The title of your site
 description: My personal website
-logo: 
+logo: favicon.ico
 url:
 baseurl:
 email: 
