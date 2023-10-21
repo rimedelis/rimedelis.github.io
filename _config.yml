@@ -2,7 +2,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 
 title: Ricardo Elisiário
 description: My personal website
-logo: MoRi.jpg
+logo: _includes/MoRi.jpg
 url:
 baseurl:
 email: 
