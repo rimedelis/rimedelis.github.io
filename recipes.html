@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Recipes
+logo: MoRi.jpg
 ---
 
 <!DOCTYPE html>
@@ -23,4 +24,144 @@ title: Recipes
             <center><p>💙🤎</p></center>
         </footer>
     </body>
+</html>
+
+---
+layout: default
+title: My Recipes
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the recipe dropdowns */
+        .recipe-dropdown {
+            display: none;
+        }
+
+        .recipe-title {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Personal Recipes</h1>
+
+    <!-- Recipe 1 -->
+    <p class="recipe-title" onclick="toggleRecipe('recipe1')">Chicken Fajitas (Serves 6)</p>
+    <div class="recipe-dropdown" id="recipe1">
+        <h2>Chicken Fajitas</h2>
+        <p>This is the first recipe description.</p>
+        <p>Ingredients:</p>
+        <ul>
+            <li>3 chicken breasts</li>
+            <li>1 onion</li>
+            <li>Salt</li>
+            <li>Cumin</li>
+            <li>Paprika</li>
+            <li>Olive oil</li>
+            <li>1 red bell pepper</li>
+            <li>1 yellow bell pepper</li>
+            <li>1 green bell pepper</li>
+            <li>Sour cream (if available)</li>
+            <li>6 tortillas</li>
+            <li>Lemon</li>
+            <li>Cheddar cheese</li>
+            <li>Leek or scallions</li>
+            <li>Cilantro</li>
+        </ul>
+        <p>Instructions:</p>
+        <ol>
+            <li>Cut the chicken into cubes and season with salt, cumin, and paprika.</li>
+            <li>Heat a skillet.</li>
+            <li>Cut the onion and peppers into strips.</li>
+            <li>Add olive oil to the skillet and add the chicken, onion, and peppers. Season with salt and sauté.</li>
+            <li>Turn off the heat and let it cook in the hot skillet.</li>
+            <li>In each tortilla, add sour cream, chicken with vegetables, sautéed scallions, cheese, lemon juice, and cilantro.</li>
+            <li>Fold the tortilla and enjoy.</li>
+        </ol>
+    </div>
+
+    <!-- Recipe 2 -->
+    <p class="recipe-title" onclick="toggleRecipe('recipe2')">Rice and Salmon (Serves 2)</p>
+    <div class="recipe-dropdown" id="recipe2">
+        <h2>Rice and Salmon</h2>
+        <p>This is the second recipe description.</p>
+        <p>Ingredients:</p>
+        <ul>
+            <li>2 salmon steaks</li>
+            <li>2 cloves of garlic, sliced</li>
+            <li>Olive oil</li>
+        </ul>
+        <p>Ingredients (Rice):</p>
+        <ul>
+            <li>1/2 onion</li>
+            <li>1 garlic clove</li>
+            <li>1 carrot</li>
+            <li>150g white rice</li>
+            <li>Salt</li>
+            <li>Herbes de Provence</li>
+            <li>Olive oil</li>
+        </ul>
+        <p>Instructions:</p>
+        <ol>
+            <li>Step 1: For the rice, in a saucepan, add water, onion, garlic, chopped carrot, salt, and olive oil. Bring to a boil.</li>
+            <li>Step 2: Add the rice, and just before turning off the heat, add the Herbes de Provence.</li>
+            <li>Step 3: Five minutes before the rice is done, heat a skillet with olive oil and garlic over low heat for two minutes.</li>
+            <li>Step 3: Add the salmon steaks and cook until they are golden brown.</li>
+        </ol>
+    </div>
+
+    <!-- Recipe 3 -->
+    <p class="recipe-title" onclick="toggleRecipe('recipe3')">Mushroom (and other Vegetables) Risotto (Serves 2)</p>
+    <div class="recipe-dropdown" id="recipe3">
+        <h2>Mushroom (and other Vegetables) Risotto</h2>
+        <p>This is the third recipe description.</p>
+        <p>Ingredients:</p>
+        <ul>
+            <li>Risotto rice (150g)</li>
+            <li>Mushrooms</li>
+            <li>Lactose-free cheese</li>
+            <li>Olive oil</li>
+            <li>Salt</li>
+            <li>Assorted vegetables</li>
+            <li>1/2 onion</li>
+            <li>Dried thyme</li>
+            <li>2 cloves of garlic</li>
+        </ul>
+        <p>Instructions:</p>
+        <ol>
+            <li>Step 1: In a deep non-stick pan, add water, olive oil, onion, garlic, and sautéed/cut vegetables. Bring the water to a boil.</li>
+            <li>Step 2: Add the rice, salt, mushrooms, and let it cook.</li>
+            <li>Step 3: When it's done, turn off the heat and add the cheese and thyme. Stir well and serve.</li>
+        </ol>
+    </div>
+
+    <h2>Upcoming Recipes</h2></a>
+        <ul>Our favorite recipes:</ul>
+            <li>Feijão de tomate com arroz de alecrim e tomilho</li>
+            <li>Hambúrgueres à Antonia's</li>
+            <li>Lasanha de frigideira</li>
+            <li>Poke bowl da Mó com mel</li>
+            <li>Receitas adaptadas do Jamie Oliver (ver fotos)</li>
+            <li>Bachão sem natas</li>
+
+    <footer>
+        <center><p>💙🤎</p></center>
+    </footer>
+
+    <script>
+        // Function to toggle the visibility of a recipe
+        function toggleRecipe(recipeId) {
+            var recipeDropdown = document.getElementById(recipeId);
+            if (recipeDropdown.style.display === "none" || recipeDropdown.style.display === "") {
+                recipeDropdown.style.display = "block";
+            } else {
+                recipeDropdown.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
