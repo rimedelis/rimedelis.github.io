@@ -6,20 +6,19 @@ featured_image: MoRi.jpg
 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <script>
-        function toggleRecipe(recipeId) {
-            var x = document.getElementById(recipeId);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
+    <style>
+        /* Style for the recipe dropdowns */
+        .recipe-dropdown {
+            display: none;
         }
-    </script>
-</head>
 
+        .recipe-title {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
     <h1>Recipes</h1>
 
@@ -28,7 +27,7 @@ featured_image: MoRi.jpg
     <div class="recipe-dropdown" id="recipe1">
         <h2>Chicken Fajitas</h2>
         <p>This is the first recipe description.</p>
-        <p><strong>Ingredients:</strong></p>
+        <p>Ingredients:</p>
         <ul>
             <li>3 chicken breasts</li>
             <li>1 onion</li>
@@ -46,7 +45,7 @@ featured_image: MoRi.jpg
             <li>Leek or scallions</li>
             <li>Cilantro</li>
         </ul>
-        <p><strong>Instructions:</strong></p>
+        <p>Instructions:</p>
         <ol>
             <li>Cut the chicken into cubes and season with salt, cumin, and paprika.</li>
             <li>Heat a skillet.</li>
@@ -63,13 +62,13 @@ featured_image: MoRi.jpg
     <div class="recipe-dropdown" id="recipe2">
         <h2>Rice and Salmon</h2>
         <p>This is the second recipe description.</p>
-        <p><strong>Ingredients (Salmon):</strong></p>
+        <p>Ingredients:</p>
         <ul>
             <li>2 salmon steaks</li>
             <li>2 cloves of garlic, sliced</li>
             <li>Olive oil</li>
         </ul>
-        <p><strong>Ingredients (Rice):</strong></p>
+        <p>Ingredients (Rice):</p>
         <ul>
             <li>1/2 onion</li>
             <li>1 garlic clove</li>
@@ -79,12 +78,12 @@ featured_image: MoRi.jpg
             <li>Herbes de Provence</li>
             <li>Olive oil</li>
         </ul>
-        <p><strong>Instructions:</strong></p>
+        <p>Instructions:</p>
         <ol>
-            <li>For the rice, in a saucepan, add water, onion, garlic, chopped carrot, salt, and olive oil. Bring to a boil.</li>
-            <li>Add the rice, and just before turning off the heat, add the Herbes de Provence.</li>
-            <li>Five minutes before the rice is done, heat a skillet with olive oil and garlic over low heat for two minutes.</li>
-            <li>Add the salmon steaks and cook until they are golden brown.</li>
+            <li>Step 1: For the rice, in a saucepan, add water, onion, garlic, chopped carrot, salt, and olive oil. Bring to a boil.</li>
+            <li>Step 2: Add the rice, and just before turning off the heat, add the Herbes de Provence.</li>
+            <li>Step 3: Five minutes before the rice is done, heat a skillet with olive oil and garlic over low heat for two minutes.</li>
+            <li>Step 3: Add the salmon steaks and cook until they are golden brown.</li>
         </ol>
     </div>
 
@@ -93,7 +92,7 @@ featured_image: MoRi.jpg
     <div class="recipe-dropdown" id="recipe3">
         <h2>Mushroom (and other Vegetables) Risotto</h2>
         <p>This is the third recipe description.</p>
-        <p><strong>Ingredients:</strong></p>
+        <p>Ingredients:</p>
         <ul>
             <li>Risotto rice (150 g)</li>
             <li>Mushrooms</li>
@@ -105,23 +104,33 @@ featured_image: MoRi.jpg
             <li>Dried thyme</li>
             <li>2 cloves of garlic</li>
         </ul>
-        <p><strong>Instructions:</strong></p>
+        <p>Instructions:</p>
         <ol>
-            <li>In a deep non-stick pan, add water, olive oil, onion, garlic, and sautéed/cut vegetables. Bring the water to a boil.</li>
-            <li>Add the rice, salt, mushrooms, and let it cook.</li>
-            <li>When it's done, turn off the heat and add the cheese and thyme. Stir well and serve.</li>
+            <li>Step 1: In a deep non-stick pan, add water, olive oil, onion, garlic, and sautéed/cut vegetables. Bring the water to a boil.</li>
+            <li>Step 2: Add the rice, salt, mushrooms, and let it cook.</li>
+            <li>Step 3: When it's done, turn off the heat and add the cheese and thyme. Stir well and serve.</li>
         </ol>
     </div>
 
-    <h2>Upcoming Recipes</h2>
-    <ul>
-        <li>Feijão de tomate com arroz de alecrim e tomilho</li>
-        <li>Hambúrgueres à Antonia's</li>
-        <li>Lasanha de frigideira</li>
-        <li>Poke bowl da Mó com mel</li>
-        <li>Receitas adaptadas do Jamie Oliver (ver fotos)</li>
-        <li>Bachão sem natas</li>
-    </ul>
-</body>
+    <h2>Upcoming Recipes</h2></a>
+        <ul>Our favorite recipes:</ul>
+            <li>Feijão de tomate com arroz de alecrim e tomilho</li>
+            <li>Hambúrgueres à Antonia's</li>
+            <li>Lasanha de frigideira</li>
+            <li>Poke bowl da Mó com mel</li>
+            <li>Receitas adaptadas do Jamie Oliver (ver fotos)</li>
+            <li>Bachão sem natas</li>
 
+    <script>
+        // Function to toggle the visibility of a recipe
+        function toggleRecipe(recipeId) {
+            var recipeDropdown = document.getElementById(recipeId);
+            if (recipeDropdown.style.display === "none" || recipeDropdown.style.display === "") {
+                recipeDropdown.style.display = "block";
+            } else {
+                recipeDropdown.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
